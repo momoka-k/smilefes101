@@ -1,5 +1,5 @@
 body{
-    background-image: url('img/quiz2.png');
+    background-image: url('img/game2.png');
     background-repeat: no-repeat;
     background-size:cover;
     /*
@@ -7,6 +7,7 @@ body{
     height: auto;
     */
 }
+
 
 html {
   animation-name: fadeInAnime;
@@ -27,47 +28,42 @@ html {
 
 p#default{
     position:relative;
-		top: -28px;
-		left:198px;
+		top: 0px;
+		left:270px;
     color:#CC0076;
     font-size: 50px;
     font-family: Arial;
     font-weight: 600;
 }
 
-
+div#quest{
+    position:relative;
+		top: 150px;
+		left:50px;
+    font-size: 14px;
+    width:310px;
+    height: 90px;
+}
 
 div#groupname{
-    position:absolute;
-		top: 220px;
-		left:10px;
+    position:relative;
+		top: 275px;
+		left:50px;
     font-size: 14px;
-    width:300px;
-    height: 20px;
-    background-color: rgba(232, 43, 179, 0.6);
-    color: #ffffff;
+    width:310px;
+    height: 90px;
     font-weight: bolder;
 }
 
 div#groupname2{
-    position:absolute;
-		top: 240px;
-		left:10px;
+    position:relative;
+		top: 205px;
+		left:50px;
+		left:50px;
     font-size: 14px;
-    width:300px;
-    height: 40px;
-    background-color: rgba(232, 43, 179, 0.6);
-    color: #ffffff;
+    width:310px;
+    height: 90px;
     font-weight: bolder;
-}
-
-div#quest{
-  position:absolute;
-  top: 350px;
-  left:30px;
-  font-size: 12px;
-  width:240px;
-  height: 140px;
 }
 
 .parent {
@@ -82,7 +78,7 @@ div#sentaku1{
 		top: 35px;
 		left:0px;
     font-size: 18px;
-    width:150px;
+    width:160px;
     height: 90px;
     z-index:10000;
 }
@@ -100,7 +96,7 @@ div#sentaku2{
 		top: 35px;
 		left:0px;
     font-size: 18px;
-    width:150px;
+    width:160px;
     height: 90px;
     z-index:10000;
 }
@@ -111,7 +107,7 @@ div#sentaku3{
 		top: 35px;
 		left:0px;
     font-size: 18px;
-    width:150px;
+    width:160px;
     height: 90px;
     z-index:10000;
 }
@@ -122,7 +118,7 @@ div#sentaku4{
 		top: 35px;
 		left:0px;
     font-size: 18px;
-    width:150px;
+    width:160px;
     height: 90px;
     z-index:10000;
 }
@@ -132,20 +128,20 @@ div#sentaku4{
 }
 .example1 label{
     position:absolute;
-    top: 280px;
-		left:0px;
+    top: 150px;
+		left:18px;
     display: block;
     background: #eac3dc;
     color: #000;
-    padding: 1px;
-    margin: 1px;
+    padding: 10px;
+    margin: 10px;
     box-sizing: border-box;
     text-align: center;
     text-decoration: none;
     border-radius: 30px;
     cursor: pointer;
-    width: 150px;
-    height: 90px;
+    width: 173px;
+    height: 95px;
 }
 .example1 input:checked+label{
     background: #e984c4;
@@ -160,20 +156,20 @@ div#sentaku4{
 }
 .example2 label{
     position:absolute;
-    top: 280px;
-		left:160px;
+    top: 150px;
+		left:205px;
     display: block;
     background: #eac3dc;
     color: #000;
-    padding: 1px;
-    margin: 1px;
+    padding: 10px;
+    margin: 10px;
     box-sizing: border-box;
     text-align: center;
     text-decoration: none;
     border-radius: 30px;
     cursor: pointer;
-    width: 150px;
-    height: 90px;
+    width: 173px;
+    height: 95px;
 }
 .example2 input:checked+label{
     background: #e984c4;
@@ -188,20 +184,20 @@ div#sentaku4{
 }
 .example3 label{
     position:absolute;
-    top: 380px;
-		left:0px;
+    top: 275px;
+		left:18px;
     display: block;
     background: #eac3dc;
     color: #000;
-    padding: 1px;
-    margin: 1px;
+    padding: 10px;
+    margin: 10px;
     box-sizing: border-box;
     text-align: center;
     text-decoration: none;
     border-radius: 30px;
     cursor: pointer;
-    width: 150px;
-    height: 90px;
+    width: 173px;
+    height: 95px;
 }
 .example3 input:checked+label{
     background: #e984c4;
@@ -216,20 +212,20 @@ div#sentaku4{
 }
 .example4 label{
     position:absolute;
-		top: 380px;
-		left:160px;
+		top: 275px;
+		left:205px;
     display: block;
     background: #eac3dc;
     color: #000;
-    padding: 1px;
-    margin: 1px;
+    padding: 10px;
+    margin: 10px;
     box-sizing: border-box;
     text-align: center;
     text-decoration: none;
     border-radius: 30px;
     cursor: pointer;
-    width: 150px;
-    height: 90px;
+    width: 173px;
+    height: 95px;
 }
 .example4 input:checked+label{
     background: #e984c4;
@@ -239,39 +235,38 @@ div#sentaku4{
     display: none;
 }
 
-#atari { position:absolute; width:200px; height:40px; top:280px; left:60px; border-radius: 10px; visibility: hidden; }
-#hazure{ position:absolute; width:200px; height:40px; top:280px; left:60px; border-radius: 10px; visibility: hidden;} 
-
-#kekka{
-  position:absolute;
-  text-align: center;
-  top: 475px;
-  left: 30px;
-  font-size: 15px;
-  width: 120px;
-  height: 50px;
-  z-index: 10000;
-  border-radius: 5px;
-  background-color: rgb(151, 164, 252); 
-  padding: 5px;
-  text-decoration: none;
-  color: white;
-  font-size: 25px;
-}
-
+#atari { position:absolute; width:200px; height:40px; top:280px; left:120px; border-radius: 10px; visibility: hidden; }
+#hazure{ position:absolute; width:200px; height:40px; top:280px; left:120px; border-radius: 10px; visibility: hidden;} 
 
 #nextbutton{
   position:absolute;
   text-align: center;
-  top: 475px;
-  left: 160px;
+  top: 400px;
+  left: 295px;
   font-size: 15px;
   width: 120px;
   height: 50px;
   z-index: 10000;
   border-radius: 5px;
   background-color: rgb(252, 151, 183); 
-  padding: 5px;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+
+#kekka{
+  position:absolute;
+  text-align: center;
+  top: 400px;
+  left: 150px;
+  font-size: 15px;
+  width: 120px;
+  height: 50px;
+  z-index: 10000;
+  border-radius: 5px;
+  background-color: rgb(151, 164, 252); 
+  padding: 10px;
   text-decoration: none;
   color: white;
   font-size: 25px;
